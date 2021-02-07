@@ -38,13 +38,15 @@ function TestComp(props) {
     setText("我要加长我要加长我要加长我要加长");
 
     // 赋值后
-    let textW2 = getElementWidth(document.getElementById("text"));
-    setRes2(textW2);
     setTimeout(()=>{
       let textW2 = getElementWidth(document.getElementById("text"));
       setRes2(textW2);
     })
   }
+  // useEffect(()=>{
+  //   let textW2 = getElementWidth(document.getElementById("text"));
+  //   setRes2(textW2);
+  // },[res1])
 
   return (
     <div>
